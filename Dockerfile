@@ -1,6 +1,7 @@
 FROM node:latest
 
 # Create app directory
+RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies
@@ -13,7 +14,7 @@ RUN npm install
 # RUN npm install --only=production
 
 # Bundle app source
-COPY . ./
+COPY . .
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
