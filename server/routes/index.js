@@ -68,9 +68,9 @@ module.exports = (app) => {
 
   app.get("/get-balance/addr/:addr", function(req, res) {
     const balance = tron.getBalanceByAddress(req.params.addr)
-    .then(res=>{
+    .then(result=>{
       res.send({
-        balance:balance,
+        balance:result,
       });
     });
     

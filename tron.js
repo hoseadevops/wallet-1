@@ -207,7 +207,7 @@ function processBlock(block){
 	try{
 		let result = await client.getAccountBalances(address);
 		console.log(result.balances[0].balance);
-		return result;
+		return result.balances[0].balance;
 	}
 	catch(error){
 		console.log(error);
