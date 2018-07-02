@@ -1,10 +1,6 @@
 {
   "development": {
-    "username": "srish",
-    "password": "123",
-    "database": "wallet-dev",
-    "host": "postgres",
-    "dialect": "postgres"
+    "use_env_variable": "CONNECTION_STRING_DEV"
   },
   "test": {
     "username": "srish",
