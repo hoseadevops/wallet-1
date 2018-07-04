@@ -146,10 +146,6 @@ app.get('/send/userid/:userid/da/:da/amt/:amt/trid/:trid',
   }
 );
 
-app.get('/transfertomine',function(req,res){
-  tron.transferInternally('TP1ZGq7Ty7WJSny1k4sTBW7gKXnC1mdNnA',4,tokenName);
-})
-
 // app.get('/transfer',function (req, res) {
 //   stateController.fetchFromState()
 //   .then((json) => {

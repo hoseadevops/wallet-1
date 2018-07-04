@@ -2,3 +2,5 @@
 node_modules/
 docker-compose.yml
 docker-compose11.yml
+user-dum1.sql
+todo-dum1.sql
