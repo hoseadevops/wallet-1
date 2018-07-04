@@ -94,7 +94,7 @@ function setClientPK(clientsPvtKey){
 function sendAmount(token, from, to, amount){
 	console.log("sending.........");	
 	const amountToSendInSun = Number(amount) * TRX_TO_SUN;
-	let f = client.send(token, from, to, amount);
+	let f = client.send(token, from, to, amountToSendInSun);
 	return f().then(function (response) {
 					console.log(response);
 					return new Promise((resolve, reject) =>{
