@@ -27,6 +27,6 @@ app.get('*', (req, res) => res.status(200).send({
 }));
 
 server.listen(port,function(){
-console.log("Listening on port ",process.env.PORT)});
+console.log("Listening Wallet on port ",process.env.PORT)});
 
 module.exports = app;
