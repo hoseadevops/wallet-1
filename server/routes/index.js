@@ -13,7 +13,7 @@ const tokenName='TRX';
 
 module.exports = (app) => {
   app.get('/api', (req, res) => res.status(200).send({
-    message: 'Welcome to the API!',
+    message: 'Welcome to the TRON API!',
   }));
 
   app.get("/get-blocks",function(req,res){
